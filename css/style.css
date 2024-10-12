@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap");
+.container {
+  max-width: 972px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+header .navbar {
+  width: 100%;
+  padding: 10px 12px 10px 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .navbar__logo h2 {
+  font-size: 26px;
+  color: #fff;
+  font-family: "Lora", serif;
+}
+header .navbar .navbar__collection {
+  display: flex;
+  gap: 40px;
+}
+header .navbar .navbar__collection .navbar__items:hover {
+  text-decoration: underline;
+}
+header .navbar .navbar__collection .navbar__items .navbar__link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oxygen", sans-serif;
+}
+header .navbar__menu {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header .navba {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 630px) {
+  header .navbar .navbar__collection {
+    display: none;
+  }
+  header .navbar .navbar__menu {
+    display: inline-block;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  background: url(../assets/hero.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.hero .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.hero .hero__content h2 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Lora", serif;
+  color: #fff;
+}
+.hero .hero__content p {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Oxygen", sans-serif;
+  color: rgba(255, 255, 255, 0.63);
+  margin: 20px 0 30px 0;
+}
+.hero .hero__content button {
+  padding: 10px 20px;
+  background-color: #dd783f;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Oxygen", sans-serif;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.hero .hero__content button:hover {
+  background-color: #fff;
+  color: #dd783f;
+  border: 1px solid #dd783f;
+}
+@media (max-width: 540px) {
+  .hero .hero__content h2 {
+    font-size: 40px;
+  }
+  .hero .hero__content p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .hero .hero__content h2 {
+    font-size: 30px;
+  }
+  .hero .hero__content p {
+    font-size: 8px;
+    width: 200px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

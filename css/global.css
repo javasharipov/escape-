@@ -1,0 +1,14 @@
+.container {
+  max-width: 972px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=global.css.map */

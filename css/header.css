@@ -1,0 +1,51 @@
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+header .navbar {
+  width: 100%;
+  padding: 10px 12px 10px 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .navbar__logo h2 {
+  font-size: 26px;
+  color: #fff;
+  font-family: "Lora", serif;
+}
+header .navbar .navbar__collection {
+  display: flex;
+  gap: 40px;
+}
+header .navbar .navbar__collection .navbar__items:hover {
+  text-decoration: underline;
+}
+header .navbar .navbar__collection .navbar__items .navbar__link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oxygen", sans-serif;
+}
+header .navbar__menu {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header .navba {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 630px) {
+  header .navbar .navbar__collection {
+    display: none;
+  }
+  header .navbar .navbar__menu {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=header.css.map */
