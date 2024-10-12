@@ -1,0 +1,20 @@
+
+.options__text{
+    display: inline-block;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    ul{
+        li{
+            a{
+                color: #768088;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
